@@ -5,6 +5,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 import { FlightsModule } from './flights/flights.module';
 
 @NgModule({
@@ -14,6 +16,7 @@ import { FlightsModule } from './flights/flights.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    MDBBootstrapModule.forRoot(),
     HttpClientModule,
     FlightsModule
   ],

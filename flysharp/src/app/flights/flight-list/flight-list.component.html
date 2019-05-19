@@ -1,8 +1,8 @@
-<table>
-  <thead>
+<table mdbTable>
+  <thead class="black white-text">
     <tr>
-      <th></th>
-      <th></th>
+      <th scope="col">Flightnumber</th>
+      <th>Origin</th>
       <th></th>
       <th></th>
       <th></th>
@@ -12,7 +12,7 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let flight of flights">
+    <tr mdbTableCol *ngFor="let flight of flights">
       <td>{{flight.flightNumber}}</td>
       <td>{{flight.origin}}</td>
       <td></td>
